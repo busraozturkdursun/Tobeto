@@ -7,6 +7,7 @@
 
 
 double number5 = 10.4;
+decimal number6 = 10.4m;
 
 char character = 'A';
 bool condition = false;
