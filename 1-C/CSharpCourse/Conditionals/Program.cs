@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-var number = 20;
+var number = 11;
 /*if (number == 10)
 {
     Console.WriteLine("Number is 10");
@@ -31,7 +31,6 @@ switch (number)
         break;
 }
 
-*/
 
 if (number >= 0 && number <= 100)
 {
@@ -44,4 +43,13 @@ else if (number>100 && number <= 200)
 else if (number > 200 || number < 0)               // option  +  -  =  || (pipe) ya da anlamına gelir.
 {
     Console.WriteLine("Number is less than 0 or greater than 200");
+}
+*/
+
+if (number<100)
+{
+    if (number>=90&&number<95)
+    {
+
+    }
 }
