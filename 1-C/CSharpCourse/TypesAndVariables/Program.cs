@@ -30,4 +30,3 @@ enum Days
 {
     Monday=10,Tuesday=20,Wednesday,Thursday,Friday,Saturday,Sunday
 }
-
