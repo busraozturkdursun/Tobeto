@@ -1,7 +1,7 @@
 ﻿namespace Classes;
-
 class Program
 {
+
     static void Main(string[] args)
     {
         CustomerManager customerManager = new CustomerManager();
@@ -12,10 +12,20 @@ class Program
         productManager.Add();
         productManager.Update();
 
+        Customer customer = new Customer();
+        customer.City = "Ankara";
+        customer.Id = 1;
+        customer.FirstName = "Busra";
+        customer.LastName = "Ozturk";
+
+        Customer customer2 = new Customer
+        {
+            Id =2, City = "İstanbul", FirstName = "Busra", LastName = "Ozturk"
+        };
+
+        Console.WriteLine(customer2.FirstName);
         Console.ReadLine();
 
     }
 }
-
-    
 
