@@ -45,7 +45,7 @@ class Student : IPerson
 
 }
 
-    class Student : IPerson
+    class Worker : IPerson
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
