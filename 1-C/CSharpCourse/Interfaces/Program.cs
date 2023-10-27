@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //InterfacesIntro
         /*  PersonManager manager = new PersonManager();
           manager.Add(new Customer { Id = 1, FirstName = "Erdinç", LastName = "Dursun", Address = "İstanbul" });
 
@@ -20,9 +21,21 @@ class Program
         */
         // IPerson person = new Customer();
 
+        //Demo
+        //CustomerManager customerManager = new CustomerManager();
+        //customerManager.Add(new SqlServerCustomerDal());
 
-        CustomerManager customerManager = new CustomerManager();
-        customerManager.Add(new SqlServerCustomerDal());
+        ICustomerDal[] customerDals = new ICustomerDal[3];
+        {
+            new SqlServerCustomerDal();
+            new OracleCustomerDal();
+            new MySqlCustomerDal();
+        };
+        foreach (var customerdal in customerDals)
+        {
+            customerdal.Add();
+        }
+
         Console.ReadLine();
 }
 
