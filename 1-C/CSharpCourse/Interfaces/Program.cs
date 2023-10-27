@@ -4,19 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        PersonManager manager = new PersonManager();
-        manager.Add(new Customer { Id = 1, FirstName = "Erdinç", LastName = "Dursun", Address = "İstanbul" });
+        /*  PersonManager manager = new PersonManager();
+          manager.Add(new Customer { Id = 1, FirstName = "Erdinç", LastName = "Dursun", Address = "İstanbul" });
 
-        Student student = new Student
-        {
-            Id = 1,
-            FirstName = "Büşra",
-            LastName= "Öztürk",
-            Departmant= "Computer Scieneces"
-        };
+          Student student = new Student
+          {
+              Id = 1,
+              FirstName = "Büşra",
+              LastName= "Öztürk",
+              Departmant= "Computer Scieneces"
+          };
 
-        manager.Add(student);
-        manager.Add(student);
+          manager.Add(student);
+          manager.Add(student);
+        */
+        // IPerson person = new Customer();
+
+
+        CustomerManager customerManager = new CustomerManager();
+        customerManager.Add(new SqlServerCustomerDal());
         Console.ReadLine();
 }
 
